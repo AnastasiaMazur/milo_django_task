@@ -5,6 +5,8 @@ A simple web application to manage extended User model and export it to CSV
 Functionality:
 * adding, deleting, editing users and viewing user details
 * custom filtering based on birthday and number
+### Task
+https://we.tl/ijbi4SLpR3
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 ### Prerequisites
