@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+
+{% block main %}
+    <h3>{{ object.username }}</h3>
+    <p>Birthday: {{ object.birthday }}</p>
+    <p>Number: {{ object.number }}</p>
+    <br>
+    {% include 'includes/_options.html' %}
+    <hr>
+    <a class="btn btn-dark" href="{% url 'users' %}" role="button">Back</a>
+{% endblock %}

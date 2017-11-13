@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+{% load app_filters %}
+
+{% block main %}
+    <h3>ALL USERS</h3>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Birthday</th>
+            <th>Eligible</th>
+            <th>Number</th>
+            <th>BizzFuzz</th>
+        </tr>
+        {% for obj in object_list %}
+            <tr>
+                <td><a href='/users/{{ obj.username }}/'>{{ obj.username }}</a></td>
+                <td>{{ obj.birthday }}</td>
+                <td>{{ obj.birthday|is_eligible }}</td>
+                <td>{{ obj.number }}</td>
+                <td>{{ obj.number|bizzfuzz }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <hr>
+    <a class="btn btn-dark" href="{% url 'add_user' %}" role="button">Add User</a>
+    <a class="btn btn-primary" href="{% url 'export_users_csv' %}">Export as CSV</a>
+{% endblock %}
