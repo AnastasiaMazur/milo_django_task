@@ -49,4 +49,4 @@ or just add them in running project by clicking 'Add User' button
 ## Versioning
 Using Python 3.5.3 & Django 1.11.5
 ### Authors
-* **Ansastasiya Mazur**
+* **Anastasia Mazur**
